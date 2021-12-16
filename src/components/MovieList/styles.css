@@ -1,0 +1,17 @@
+.movieList {
+    margin-bottom: 30px;
+}
+
+.movieList h2 {
+    margin: 0px 0px 0px 30px;
+}
+
+.movieList--area {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movieList--all {
+    width: 99999999999px;
+}
+

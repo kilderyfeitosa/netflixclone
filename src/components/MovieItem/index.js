@@ -1,9 +1,9 @@
 import React from 'react'
-import './MovieItem.css'
+import './styles.css'
 
-export default ({key, img, title}) => {
+export default ({img, title}) => {
     return (
-        <div key={key}>
+        <div className='movieItem'>
             <img src={`https://image.tmdb.org/t/p/w300${img}`} alt={title} />
         </div>
     )

@@ -1,0 +1,15 @@
+.movieItem {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movieItem img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+
+.movieItem img:hover {
+    transform: scale(1);
+}
