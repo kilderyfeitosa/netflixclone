@@ -1,4 +1,3 @@
-
 .featured {
     height: 100vh;
 }
@@ -32,7 +31,9 @@
     margin-top: 15px;
 }
 
-.featured--points, .featured--year, .featured--seasons {
+.featured--points,
+.featured--year,
+.featured--seasons {
     display: inline-block;
     margin-right: 15px;
 }
@@ -49,7 +50,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
 }
 
@@ -57,7 +59,8 @@
     margin-top: 15px;
 }
 
-.featured--watchbutton, .featured--mylistbutton {
+.featured--watchbutton,
+.featured--mylistbutton {
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
@@ -69,10 +72,10 @@
     transition: all ease 0.3;
 }
 
-.featured--watchbutton:hover, .featured--mylistbutton:hover {
+.featured--watchbutton:hover,
+.featured--mylistbutton:hover {
     opacity: 0.7;
 }
-
 
 .featured--watchbutton {
     background-color: #FFF;
@@ -88,4 +91,28 @@
     margin-top: 15px;
     font-size: 16px;
     color: #999;
+}
+
+@media (max-width:760px) {
+    .featured {
+        height: 90vh;
+    }
+    .featured--name {
+        font-size: 40px;
+    }
+    .featured--info {
+        font-size: 16px;
+    }
+    .featured--description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .featured--watchbutton,
+    .featured--mylistbutton {
+        font-size: 16px;
+    }
+    .featured--genres {
+        font-size: 14px;
+    }
 }

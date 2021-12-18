@@ -19,7 +19,7 @@ const basicFetch = async (endpoint) => {
 
 export default {
     getHomeList: async () => {
-        return[
+        return [
             {
                 slug: 'originals',
                 title: 'Originais Netflix',
@@ -65,17 +65,17 @@ export default {
     getMoreInfo: async (id, type) => {
         let info = {};
 
-        if(id) {
-            switch(type) {
+        if (id) {
+            switch (type) {
                 case 'movie':
                     info = await basicFetch(`/movie/${id}?language=pt-BR&api_key=${API_KEY}`);
-                break;
+                    break;
                 case 'tv':
                     info = await basicFetch(`/tv/${id}?language=pt-BR&api_key=${API_KEY}`);
-                break;
+                    break;
                 default:
                     info = null;
-                break;
+                    break;
             }
         }
 
