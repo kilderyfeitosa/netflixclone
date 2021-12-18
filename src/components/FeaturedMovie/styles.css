@@ -1,5 +1,6 @@
 .featured {
     height: 100vh;
+    width: 100%;
 }
 
 .featured--vertical {
@@ -11,7 +12,7 @@
 .featured--horizontal {
     width: inherit;
     height: inherit;
-    background: linear-gradient(to right, #111 30%, transparent 70%);
+    background: linear-gradient(to right, #111 15%, transparent 70%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,21 +98,26 @@
     .featured {
         height: 90vh;
     }
+
     .featured--name {
         font-size: 40px;
     }
+
     .featured--info {
         font-size: 16px;
     }
+
     .featured--description {
         font-size: 14px;
         max-width: 100%;
         margin-right: 30px;
     }
+
     .featured--watchbutton,
     .featured--mylistbutton {
         font-size: 16px;
     }
+
     .featured--genres {
         font-size: 14px;
     }

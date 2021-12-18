@@ -4,6 +4,7 @@ import './App.css'
 import FeaturedMovie from "./components/FeaturedMovie";
 import Header from "./components/Header";
 import MovieList from "./components/MovieList";
+import PreviewModal from "./components/PreviewModal";
 export default () => {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
@@ -45,12 +46,13 @@ export default () => {
   return (
     <div className="page">
       <Header black={blackHeader} />
+      {/* <PreviewModal open={true} /> */}
       {featuredData &&
         <FeaturedMovie item={featuredData} />
       }
       <section className="list">
         {movieList.map((item, key) => (
-          <MovieList title={item.title} items={item.items} />
+          <MovieList key={key} title={item.title} items={item.items} />
         ))}
       </section>
       <footer>

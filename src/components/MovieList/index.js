@@ -3,10 +3,13 @@ import MovieItem from '../MovieItem'
 import './styles.css'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import PreviewModal from '../PreviewModal';
 
 export default ({ title, items }) => {
 
     const [scrollX, setScrollx] = useState(0);
+    const [itemSelected, setItemSelected] = useState(null);
+    const [isModalVisible, setisModalVisible] = useState(false);
 
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth / 2);
@@ -43,10 +46,15 @@ export default ({ title, items }) => {
                         // <div key={key} className='movieList--item'>
                         //     <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
                         // </div>
-                        <MovieItem img={item.poster_path} title={item.original_title} />
+                        <MovieItem key={key} item={item} img={item.poster_path} title={item.original_title}
+                            setisModalVisible={() => { setisModalVisible(true) }}
+                            setItemSelected={() => { setItemSelected(item) }} />
                     ))}
                 </div>
             </div>
+            {isModalVisible &&
+                <PreviewModal onClose={() => { setisModalVisible(false) }} itemSelected={itemSelected} />
+            }
         </div>
     )
 }
