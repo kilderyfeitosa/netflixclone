@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://github.com/gustavo-nt/netflix-clone/blob/master/public/logo.png" alt="logo" height="65"/>
+  
+  <h2 align="center">
+    Clone front end em React.js
+  </h2>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center"> 
+⚠️ Projeto em andamento ⚠️
+</h3>
+<div />
 
-## Available Scripts
 
-In the project directory, you can run:
+## 💻 Projeto
 
-### `npm start`
+  Clone do Front End da plataforma Netflix, no qual foi utilizado a API fornecida pelo The Movie Database para manipulação de dados sobre os filmes e séries para o site. Esse Projeto foi desenvolvido durante a live no Youtube pelo canal do professor Boenick Lacerda. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎥 Demonstração
+<img src="https://github.com/kilderyfeitosa/netflixclone/blob/master/public/github/preview-main.png" />
+<img src="https://github.com/kilderyfeitosa/netflixclone/blob/master/public/github/preview-movie-selected.png" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📎 Features 
 
-### `npm test`
+- [X] Filme em Destaque
+- [x] Filmes Originais Netflix
+- [x] Filmes Recomendados 
+- [x] Filmes por categorias: ação, comédia, horror, etc
+- [x] Scroll list horizontal com setas indicativas
+- [x] Preview do filme selecionado
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## ⚙ Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+O editor de texto que eu recomendo é o [VSCode](https://code.visualstudio.com/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💻 Rodando a Aplicação (web)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone este repositório em seu ambiente
+$ git clone https://github.com/kilderyfeitosa/netflixclone
 
-### `npm run eject`
+# Instale as dependências dentro do projeto
+$ npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Para executar a aplicação use
+$ npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💡 Tecnologias Utilizadas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ReactJS (17.0.2)
+- Javascript
 
-## Learn More
+## 📕 Bibliotecas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Esse projeto utilizou das seguintes libs:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- react-dom
+- @mui/material
+- tmdb
 
-### Code Splitting
+## ⚖ Direitos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Todos direitos são reservados a Netflix e ao The Movie Database.
+<hr/>
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito por Kildery Feitosa
